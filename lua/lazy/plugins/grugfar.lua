@@ -17,7 +17,7 @@ return {
           }
         end,
         mode = { 'n', 'v' },
-        desc = 'Search and Replace',
+        desc = '[S]earch and [r]eplace',
       },
     },
   },
