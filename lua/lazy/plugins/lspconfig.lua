@@ -272,7 +272,6 @@ return {
         --'tailwindcss',
         'html',
         'html-lsp',
-        'htmx',
         'cssls',
 
         -- Python
@@ -313,9 +312,6 @@ return {
         -- Docker
         'dockerls',
         'docker_compose_language_service',
-
-        -- ProtoBuff
-        'pbls',
       })
 
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
