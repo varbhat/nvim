@@ -48,6 +48,7 @@ return {
       integrations = {
         cmp = true,
         flash = true,
+        fzf = true,
         gitsigns = true,
         headlines = true,
         illuminate = true,
@@ -70,7 +71,6 @@ return {
         neotree = true,
         noice = true,
         semantic_tokens = true,
-        telescope = true,
         treesitter = true,
         treesitter_context = true,
         which_key = true,

@@ -109,10 +109,6 @@ return {
       'nvim-treesitter/nvim-treesitter',
       'mrcjkb/rustaceanvim',
       {
-        'thenbe/neotest-playwright',
-        dependencies = 'nvim-telescope/telescope.nvim',
-      },
-      {
         'fredrikaverpil/neotest-golang',
         dependencies = {
           {

@@ -6,8 +6,11 @@ return {
       { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
     }, -- use if prefer nvim-web-devicons
     config = function()
+      require('fzf-lua').register_ui_select()
       -- calling `setup` is optional for customization
-      require('fzf-lua').setup {}
+      require('fzf-lua').setup {
+        lsp = { jump_to_single_result = true },
+      }
     end,
     keys = {
       {
