@@ -46,7 +46,7 @@ return {
         },
       },
       integrations = {
-        cmp = true,
+        blink_cmp = true,
         flash = true,
         fzf = true,
         gitsigns = true,
