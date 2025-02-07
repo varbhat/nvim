@@ -10,6 +10,16 @@ return {
       -- calling `setup` is optional for customization
       require('fzf-lua').setup {
         lsp = { jump_to_single_result = true },
+        fzf_colors = true,
+
+        grep = {
+          rg_glob = true,
+        },
+        keymap = {
+          builtin = {
+            ['<C-/>'] = 'toggle-help',
+          },
+        },
       }
     end,
     keys = {
@@ -35,7 +45,7 @@ return {
         mode = { 'n', 'v' },
       },
       {
-        '<leader>sf',
+        '<leader>s<leader>',
         function()
           require('fzf-lua').files()
         end,
@@ -59,11 +69,11 @@ return {
         mode = { 'n', 'v' },
       },
       {
-        '<leader>sG',
+        '<leader>sf',
         function()
           require('fzf-lua').git_files()
         end,
-        desc = '[S]earch [G]it Files',
+        desc = '[S]earch Git [f]iles',
         mode = { 'n', 'v' },
       },
       {
@@ -123,19 +133,11 @@ return {
         mode = { 'n', 'v' },
       },
       {
-        '<leader>sL',
+        '<leader>.',
         function()
           require('fzf-lua').live_grep_glob()
         end,
-        desc = '[S]earch [L]ive Grep Glob',
-        mode = { 'n', 'v' },
-      },
-      {
-        '<leader>sL',
-        function()
-          require('fzf-lua').live_grep_glob()
-        end,
-        desc = '[S]earch [L]ive Grep Glob',
+        desc = '[S]earch [l]ive Grep',
         mode = { 'n', 'v' },
       },
       {
@@ -144,6 +146,22 @@ return {
           require('fzf-lua').registers()
         end,
         desc = '[S]earch [R]egisters',
+        mode = { 'n', 'v' },
+      },
+      {
+        '<leader>sy',
+        function()
+          require('fzf-lua').grep_visual()
+        end,
+        desc = '[S]earch Visual',
+        mode = { 'n', 'v' },
+      },
+      {
+        '<leader>sp',
+        function()
+          require('fzf-lua').grep_project()
+        end,
+        desc = '[S]earch [p]roject',
         mode = { 'n', 'v' },
       },
     },
