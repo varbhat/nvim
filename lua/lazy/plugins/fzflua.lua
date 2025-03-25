@@ -9,7 +9,7 @@ return {
       require('fzf-lua').register_ui_select()
       -- calling `setup` is optional for customization
       require('fzf-lua').setup {
-        lsp = { jump_to_single_result = true },
+        lsp = { jump1 = true },
         fzf_colors = true,
 
         grep = {
