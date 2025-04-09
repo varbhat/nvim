@@ -287,11 +287,6 @@ return {
         'bashls',
         'ast_grep',
 
-        -- Markdown
-        'markdownlint',
-        'markdown_oxide',
-        'prosemd_lsp',
-
         -- JSON
         'jq',
         'jq-lsp',
