@@ -32,7 +32,7 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 -- Open Line Diagnostics
-vim.keymap.set('n', '<leader>cd', vim.diagnostic.open_float, { desc = 'Line Diagnostics' })
+vim.keymap.set('n', '<leader>dd', vim.diagnostic.open_float, { desc = 'Line Diagnostics' })
 
 -- Quit Actions
 vim.keymap.set('n', '<leader>qq', '<cmd>q<cr>', { desc = 'Quit' })
