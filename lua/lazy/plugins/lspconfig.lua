@@ -47,7 +47,7 @@ return {
           map('gd', require('fzf-lua').lsp_definitions, '[G]oto [D]efinition')
 
           -- Find references for the word under your cursor.
-          map('gr', require('fzf-lua').lsp_references, '[G]oto [R]eferences')
+          map('gR', require('fzf-lua').lsp_references, '[G]oto [R]eferences')
 
           -- Jump to the implementation of the word under your cursor.
           --  Useful when your language has ways of declaring types without an actual implementation.
@@ -191,7 +191,7 @@ return {
         'cssls',
 
         -- Python
-        'basedpyright',
+        --'basedpyright',
 
         -- Clang Tools
         'clangd',
