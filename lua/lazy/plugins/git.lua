@@ -9,7 +9,9 @@ return {
     keys = {
       { '<leader>eg', '<cmd>Neogit<cr>', desc = 'Neo[g]it' },
     },
-    config = true,
   },
   { 'akinsho/git-conflict.nvim', version = '*', config = true },
+  { 'sindrets/diffview.nvim', version = '*', config = true, keys = {
+    { '<leader>ev', '<cmd>DiffviewOpen<cr>', desc = 'Diff[v]iew' },
+  } },
 }

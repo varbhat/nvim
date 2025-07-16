@@ -85,6 +85,26 @@ return {
         mode = { 'n', 'v' },
       },
       {
+        '<leader>sc',
+        function()
+          require('fzf-lua').grep {
+            raw_cmd = [[git status -su | rg "^\s*M" | cut -d ' ' -f3]],
+          }
+        end,
+        desc = '[S]earch [c]hanged git files',
+        mode = { 'n', 'v' },
+      },
+      {
+        '<leader>sC',
+        function()
+          require('fzf-lua').grep {
+            raw_cmd = [[git status -su | rg "^\s*M" | cut -d ' ' -f3 | xargs rg --hidden --column --line-number --no-heading --color=always  --with-filename -e '']],
+          }
+        end,
+        desc = '[S]earch in [C]hanged git files',
+        mode = { 'n', 'v' },
+      },
+      {
         '<leader>sd',
         function()
           require('fzf-lua').diagnostics_document()
@@ -106,6 +126,14 @@ return {
           require('fzf-lua').oldfiles()
         end,
         desc = '[S]earch Recent Files("." for repeat)',
+        mode = { 'n', 'v' },
+      },
+      {
+        '<leader>st',
+        function()
+          require('fzf-lua').tabs()
+        end,
+        desc = '[S]earch [t]abs',
         mode = { 'n', 'v' },
       },
       {
